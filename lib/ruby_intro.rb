@@ -3,6 +3,7 @@
 # Part 1
 
 def sum(arr)
+<<<<<<< HEAD
   arr.sum
 end
 
@@ -10,6 +11,13 @@ def max_2_sum(arr)
   return 0 if arr.empty?
   return arr[0] if arr.length == 1
   arr.sort.last(2).sum
+=======
+  # YOUR CODE HERE
+end
+
+def max_2_sum(arr)
+  # YOUR CODE HERE
+>>>>>>> origin/master
 end
 
 def sum_to_n?(arr, number)
