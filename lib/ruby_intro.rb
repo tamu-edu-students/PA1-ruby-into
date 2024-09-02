@@ -41,7 +41,15 @@ def starts_with_consonant?(string)
 end
 
 def binary_multiple_of_4?(string)
-  # YOUR CODE HERE
+  return false unless string.match?(/\A[01]+\z/)
+  slen = string.length
+  if slen > 2 && string.end_with?("00")
+    return true
+  elsif string == "0"
+    return true
+  else
+    return false
+  end
 end
 
 # Part 3
